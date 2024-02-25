@@ -128,7 +128,7 @@ const Contact = () => {
       </section>
       <div className="justify-center flex  py-4 pl-2">
         <div className="flex-1 ">
-          <h1 className=" font-md text-4xl  md:pl-5">
+          <h1 className=" font-md text-3xl  md:pl-5">
             &lt; avartarr /&gt;
           </h1>
         </div>

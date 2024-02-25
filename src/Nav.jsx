@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { GiLoveHowl } from "react-icons/gi";
 
 const Nav = () => {
   const [nav, setNav] = useState(false);
@@ -38,7 +39,7 @@ const Nav = () => {
           </ul>
         </div>
         <div onClick={handleNav} className="block md:hidden p-6 ">
-          {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
+          {nav ? <GiLoveHowl size={20} /> : <AiOutlineMenu size={20} />}
         </div>
         <div
           className={
@@ -47,9 +48,14 @@ const Nav = () => {
               : "fixed left-[-100%]"
           }
         >
-           <h1 className="text-3xl font-bold m-4 p-4">
-          AVARTARR
+          <div className="flex">
+          <h1 className="text-3xl font-bold ml-1 my-4 py-4">
+          AVARTARR 
         </h1>
+        <div onClick={handleNav} className="block md:hidden py-10 pl-3" >
+        <AiOutlineClose size={20} />
+        </div>
+          </div>
           <ul className="p-4 ">
             {links.map((link) => (
               <li key={link.id} className="link">
