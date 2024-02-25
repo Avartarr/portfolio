@@ -1,13 +1,64 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+ body{
+    background: linear-gradient(to right, rgb(3, 3, 16) 30%, #0c0229 50%, #08011b 70%, #08011b 100%);
+    font-family: "Kumbh Sans", sans-serif;
+    color: white;
+  }
+ 
+
+.link {
+    padding: 8px 15px;
+    transition: all 0.5s;  
+  }
+
+  .link:hover {
+    background-color: #1c0746d7;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+
+  .intro{
+    border-left: 2px solid rgb(188, 176, 176);
+   
+  }
+
+  
+  .skills{
+    display: flex;
+    background: linear-gradient(to right, rgb(3, 3, 16) 30%, #0c0229 50%, #08011b 70%, black 100%);
+    padding-top: 40px;
+  }
+
+  .contact{
+    background: linear-gradient(to right, rgb(3, 3, 16) 30%, #2d0531 50%, #08011b 70%, #08011b 100%);
+    border-bottom: #520459 2px solid;
+  }
+
+  .sec{
+    background-color:#0d0130;
+    border-radius: 1.7rem;
+    margin-right: 30px;
+  }
+
+  button{
+    background-color: #7b1266;
+    border-radius: 9999px;
+  }
+
+  .cert{
+    height: 250px;
+    width: 430px;
+    padding: 10px;
+    border-radius: 1.5rem;
+  }
+
+  .scroll:hover {
+    padding-bottom: 0.4rem;
+    border-bottom: 4px solid #D613B0;
+    cursor: pointer; 
+  }
